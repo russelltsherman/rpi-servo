@@ -69,7 +69,7 @@ def button_e(button, pressed):
 def release_handler(button, pressed):
     global button_was_held
     if not button_was_held:
-        os.system('/home/pi/rpi-servo-phat/examples/sk_sequential')
+        os.system('/home/pi/rpi-servo-phat/examples/sk_random_sample')
 
 
 signal.pause()
