@@ -13,7 +13,8 @@ bootstrap: apt
 
 ## update repo and update dependencies
 update:
-	git pull
+	git fetch origin
+	git reset --hard origin/master
 	sudo apt-get update
 	make bootstrap
 .PHONY: update
