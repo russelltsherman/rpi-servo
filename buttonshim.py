@@ -21,7 +21,7 @@ def button_a(button, pressed):
 def release_handler(button, pressed):
     global button_was_held
     if not button_was_held:
-        os.system('/home/pi/rpi-servo-phat/examples/sk_sequential.py')
+        os.system('/home/pi/rpi-servo-phat/examples/sk_sequential')
 
 @buttonshim.on_press(buttonshim.BUTTON_B)
 def button_b(button, pressed):
@@ -33,7 +33,7 @@ def button_b(button, pressed):
 def release_handler(button, pressed):
     global button_was_held
     if not button_was_held:
-        os.system('/home/pi/rpi-servo-phat/examples/sk_sequential_alternate.py')
+        os.system('/home/pi/rpi-servo-phat/examples/sk_sequential_alternate')
 
 @buttonshim.on_press(buttonshim.BUTTON_C)
 def button_c(button, pressed):
@@ -45,7 +45,7 @@ def button_c(button, pressed):
 def release_handler(button, pressed):
     global button_was_held
     if not button_was_held:
-        os.system('/home/pi/rpi-servo-phat/examples/sk_synchronised.py')
+        os.system('/home/pi/rpi-servo-phat/examples/sk_synchronised')
 
 @buttonshim.on_press(buttonshim.BUTTON_D)
 def button_d(button, pressed):
@@ -57,7 +57,7 @@ def button_d(button, pressed):
 def release_handler(button, pressed):
     global button_was_held
     if not button_was_held:
-        os.system('/home/pi/rpi-servo-phat/examples/sk_synchronized_alternate.py')
+        os.system('/home/pi/rpi-servo-phat/examples/sk_synchronized_alternate')
 
 @buttonshim.on_press(buttonshim.BUTTON_E)
 def button_e(button, pressed):
@@ -69,7 +69,7 @@ def button_e(button, pressed):
 def release_handler(button, pressed):
     global button_was_held
     if not button_was_held:
-        os.system('/home/pi/rpi-servo-phat/examples/sk_sequential.py')
+        os.system('/home/pi/rpi-servo-phat/examples/sk_sequential')
 
 
 signal.pause()
